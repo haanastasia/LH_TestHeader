@@ -1,0 +1,19 @@
+$primary-color:        #FFCC00;
+$second-color:         #252525;
+$main-color-family:    #000000;
+ 
+ 
+$font-stack:             'Roboto';
+$xs:                     520px;
+$sm:                     768px;
+$md:                     992px;
+$lg:                     1199px;
+
+@mixin flex($direction, $wrap, $content, $items, $align-content) {
+    display: flex; 
+	flex-direction: $direction;
+	flex-wrap: $wrap;
+	justify-content: $content;
+	align-items: $items;
+	align-content: $align-content;
+}

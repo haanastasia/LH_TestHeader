@@ -1,0 +1,7 @@
+.search {
+    &__icon {
+        @include flex(row, wrap, center, center, center); 
+        padding: 0px 8px;
+        cursor: pointer;
+    }
+}

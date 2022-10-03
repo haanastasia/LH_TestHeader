@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Магазин инструмента</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="container header__row">
+            <div class="header__column header__logo header-logo">
+                <div class="header-logo__bg">
+                    <img src="/img/logo.svg" alt="">
+                </div>
+                <div class="header-logo__title">магазин инструмента</div>
+            </div>
+            <div class="header__column">
+                <div class="header-top"> 
+                    <nav class="header__nav nav-top">
+                        <ul class="nav__list nav-top__list">
+                            <li class="nav__item nav-top__item">
+                                <a class="nav__link nav-top__link" href="javascript:void(0)">Каталог инструментов</a>
+                            </li>
+                            <li class="nav__item nav-top__item">
+                                <a class="nav__link nav-top__link" href="javascript:void(0)">Все для сада</a>
+                            </li>
+                            <li class="nav__item nav-top__item">
+                                <a class="nav__link nav-top__link" href="javascript:void(0)">Ручной интрумент</a>
+                            </li>
+                            <li class="nav__item nav-top__item">
+                                <a class="nav__link nav-top__link" href="javascript:void(0)">Электрика</a>
+                            </li>
+                            <li class="nav__item nav-top__item">
+                                <a class="nav__link nav-top__link" href="javascript:void(0)">Доставка</a>
+                            </li>
+                            <li class="nav__item nav-top__item">
+                                <a class="nav__link nav-top__link" href="javascript:void(0)">Оплата</a>
+                            </li>
+                            <li class="nav__item nav-top__item">
+                                <a class="nav__link nav-top__link" href="javascript:void(0)">О нас</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="profile__nav profile-nav">
+                        <ul class="nav__list profile-nav__list">
+                            <li class="nav__item profile-nav__item">
+                                <a class="nav__link profile-nav__link" href="javascript:void(0)">Вход</a>
+                            </li>
+                            <li class="nav__item profile-nav__item">
+                                <a class="nav__link profile-nav__link" href="javascript:void(0)">Регистрация</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header-middle"> 
+                    
+                    <div class="header__banner banner">
+                        <img src="/img/banner.svg">
+                    </div>
+
+                    <div class="header__cart miniCart">
+                        <div class="miniCart__list">
+                            <div class="miniCart__item"> 
+                                <a class="miniCart__link miniCart__link--cart" href="javascript:void(0)">3 шт. / 17 250 р.</a>
+                            </div>
+                            <div class="miniCart__item"> 
+                                <a class="miniCart__link miniCart__link--favorites" href="javascript:void(0)">Избранное (7)</a>
+                            </div>
+                            <div class="miniCart__item"> 
+                                <a class="miniCart__link miniCart__link--compare" href="javascript:void(0)">К сравнению (5)</a>
+                            </div>
+                        </div>
+                        <!-- d-none d-lg-block  -->
+                        <div class="miniCart__list-product miniCart-product">
+                            <div class="miniCart-product__item">
+                                <a class="miniCart-product__link" href="javascript:void(0)">
+                                    <img class="miniCart-product__picture" src="/img/product2.jpg">
+                                </a>
+                            </div>
+                            <div class="miniCart-product__item">
+                                <a class="miniCart-product__link" href="javascript:void(0)">
+                                    <img class="miniCart-product__picture" src="/img/product1.jpg">
+                                </a>
+                            </div>
+                            <div class="miniCart-product__item">
+                                <a class="miniCart-product__link" href="javascript:void(0)">
+                                    <img class="miniCart-product__picture" src="/img/product3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__contact header-contact">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div>
+                                <b>Время работы:</b>
+                            </div>
+                            <div>10:00 — 19:00</div>
+                        </div>
+                        <div class="header-contact__phone">
+                            <a href="tel:84957212525">8 495 721-25-25</a>
+                        </div>
+                        <div class="header-contact__city location d-flex flex-row justify-content-between">
+                            <div>
+                                <div class="location__city">Москва</div>
+                            </div>
+                            <div>
+                                <div class="location__btn">сменить</div> 
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12"> 
+                    <nav class="header__nav nav-main">
+                        <div class="header__navbar-toggler nav-main__item nav-main__item--chosen">
+                            <img src="/img/menu.png">
+                        </div>
+                        <div class="nav-mobile"> 
+                            <ul class="nav__list nav__list--mobile">
+                                <li class="nav__item nav-mobile__item nav-mobile__item--close">
+                                    <img src="/img/close.png">
+                                </li>
+                                <li class="nav__item nav-mobile__item">
+                                    <span class="nav__link nav-mobile__link nav-mobile__link--parent" href="javascript:void(0)">Категории</span>
+                                    <ul class="nav__list nav-mobile__sublist">                           
+                                        <li class="nav__item nav-mobile__item nav__item nav-mobile__item--active">
+                                            <a class="nav__link nav-mobile__link" href="javascript:void(0)">Перфораторы</a>
+                                        </li>
+                                        <li class="nav__item nav-mobile__item">
+                                            <a class="nav__link nav-mobile__link" href="javascript:void(0)">Дрели</a>
+                                        </li>
+                                        <li class="nav__item nav-mobile__item">
+                                            <a class="nav__link nav-mobile__link" href="javascript:void(0)">Шлифмашины</a>
+                                        </li>
+                                        <li class="nav__item nav-mobile__item">
+                                            <a class="nav__link nav-mobile__link" href="javascript:void(0)">Пистолеты</a>
+                                        </li>
+                                        <li class="nav__item nav-mobile__item">
+                                            <a class="nav__link nav-mobile__link" href="javascript:void(0)">Электропилы</a>
+                                        </li>
+                                        <li class="nav__item nav-mobile__item">
+                                            <a class="nav__link nav-mobile__link" href="javascript:void(0)">Наборы инструментов</a>
+                                        </li>
+                                        <li class="nav__item nav-mobile__item">
+                                            <a class="nav__link nav-mobile__link" href="javascript:void(0)">Аксесcуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav__item nav-mobile__item">
+                                    <a class="nav__link nav-mobile__link" href="javascript:void(0)">Каталог инструментов</a>
+                                </li>
+                                <li class="nav__item nav-mobile__item">
+                                    <a class="nav__link nav-mobile__link" href="javascript:void(0)">Все для сада</a>
+                                </li>
+                                <li class="nav__item nav-mobile__item">
+                                    <a class="nav__link nav-mobile__link" href="javascript:void(0)">Ручной интрумент</a>
+                                </li>
+                                <li class="nav__item nav-mobile__item">
+                                    <a class="nav__link nav-mobile__link" href="javascript:void(0)">Электрика</a>
+                                </li>
+                                <li class="nav__item nav-mobile__item">
+                                    <a class="nav__link nav-mobile__link" href="javascript:void(0)">Доставка</a>
+                                </li>
+                                <li class="nav__item nav-mobile__item">
+                                    <a class="nav__link nav-mobile__link" href="javascript:void(0)">Оплата</a>
+                                </li>
+                                <li class="nav__item nav-mobile__item">
+                                    <a class="nav__link nav-mobile__link" href="javascript:void(0)">О нас</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__search search nav-main__item nav-main__item--chosen">
+                            <div class="search__icon">
+                                <img src="/img/search.svg">
+                            </div>
+                        </div>
+                        <ul class="nav__list nav-main__list">
+                            <li class="nav__item nav-main__item nav-main__item--active">
+                                <a class="nav__link nav-main__link" href="javascript:void(0)">Перфораторы</a>
+                            </li>
+                            <li class="nav__item nav-main__item">
+                                <a class="nav__link nav-main__link" href="javascript:void(0)">Дрели</a>
+                            </li>
+                            <li class="nav__item nav-main__item">
+                                <a class="nav__link nav-main__link" href="javascript:void(0)">Шлифмашины</a>
+                            </li>
+                            <li class="nav__item nav-main__item">
+                                <a class="nav__link nav-main__link" href="javascript:void(0)">Пистолеты</a>
+                            </li>
+                            <li class="nav__item nav-main__item">
+                                <a class="nav__link nav-main__link" href="javascript:void(0)">Электропилы</a>
+                            </li>
+                            <li class="nav__item nav-main__item">
+                                <a class="nav__link nav-main__link" href="javascript:void(0)">Наборы инструментов</a>
+                            </li>
+                            <li class="nav__item nav-main__item">
+                                <a class="nav__link nav-main__link" href="javascript:void(0)">Аксесcуары</a>
+                            </li>
+                        </ul>
+                        <div class="nav-main__item nav-main__item--chosen">
+                            <a class="nav__link nav-main__link" href="javascript:void(0)">Распродажа</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

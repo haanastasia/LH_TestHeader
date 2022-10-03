@@ -1,0 +1,242 @@
+.header { 
+    padding: 16px 0px 0px;
+
+    &__row {
+        @include flex(row, nowrap, space-between, flex-start, flex-start); 
+        padding-bottom: 26px;
+    }
+
+    &__navbar-toggler {
+        display: none;
+        cursor: pointer;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__column {
+        width: 100%;
+    }
+ 
+    &-top {
+        @include flex(row, nowrap, space-between, center, center); 
+        padding: 0px 0px 8px;
+        border-bottom: 1px solid #D7D7D7;
+    } 
+
+    &-middle {
+        @include flex(row, nowrap, space-between, flex-start, flex-start); 
+        padding-top: 22px;
+    }
+
+    &__logo {
+        width: 100%;
+        max-width: 210px;
+        margin-right: 30px;
+    }
+
+    &-logo {
+        margin-top: 3px;
+
+        &__bg {
+            background-color: $primary-color;
+            padding: 10px 0px 6px;
+            text-align: center;
+        }
+
+        &__title {
+            font-family: 'HeliosCond';
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: $main-color-family;
+            text-align: center;
+            padding: 8px;
+        }
+    }
+
+    &-contact {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: -0.025em;
+        color: $second-color;
+
+        &__phone {
+            padding: 15px 0px 14px;
+
+            a {
+                font-weight: 700;
+                font-size: 25px;
+                line-height: 29px;
+                letter-spacing: -0.02em;
+                color: $second-color;
+                text-decoration: none;
+            }
+        }
+
+        &__city {
+            border-top: 1px solid #D7D7D7;
+            padding-top: 4px;
+        }
+    }
+
+    &__banner {
+        margin-right: 20px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+    
+    &__cart {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: $lg)  {
+    
+    .header {
+
+        &__logo {
+            margin-right: 25px;
+            max-width: 160px;
+        }
+
+        &-contact {
+    
+            &__phone {
+                padding: 11px 0 10px;
+    
+                a {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+    
+            &__city {
+                border-top: 1px solid #D7D7D7;
+                padding-top: 4px;
+            }
+        }
+
+        &__row {
+            padding-bottom: 20px;
+        }
+
+        &__banner {
+            
+            img {
+                max-width: 220px;
+            }
+        }
+    }
+}
+
+@media (max-width: $md)  {
+    
+    .header {
+
+        &-top {
+            @include flex(row, nowrap, flex-end, center, center); 
+        }
+
+        &__logo {
+            margin-right: 20px;
+            max-width: 150px;
+        }
+
+        &-logo {
+            &__title {
+                color: #000;
+                font-family: HeliosCond;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 15px;
+                padding: 8px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+
+        &__banner {
+
+                img {
+                    max-width: 160px;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+        }
+
+        &__navbar-toggler {
+            @include flex(row, wrap, center, center, center); 
+            padding: 0 8px;
+        }
+
+    }
+}
+
+@media (max-width: $sm)  {
+    
+    .header {
+
+        &__logo {
+            margin-right: 20px;
+            max-width: 150px;
+        }
+
+        &-logo {
+            &__title {
+                color: #000;
+                font-family: HeliosCond;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 15px;
+                padding: 8px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+
+        &__banner {
+            display: none;
+        }
+
+    }
+}
+
+@media (max-width: $xs)  {
+    
+    .header {
+
+        &__logo {
+            margin-right: 15px;
+            max-width: 139px;
+            min-width: 120px;
+        }
+
+        &-contact {
+            &__phone {
+                white-space: nowrap;
+
+                a {
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+        }
+
+        &-middle {
+            @include flex(column, nowrap, center, stretch, stretch); 
+            padding-top: 10px;
+        }
+
+        &__cart {
+            margin-right: 0;
+        }
+    }
+}

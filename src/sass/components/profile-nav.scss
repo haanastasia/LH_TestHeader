@@ -1,0 +1,39 @@
+.profile-nav {
+
+    &__link {
+        padding: 0px 14px;
+    }
+
+    &__item {
+        position: relative;
+
+        &:not(:last-child):before {
+            content: "";
+            height: 10px;
+            width: 1px;
+            background: #000000;
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            margin: auto;
+            right: 0px;
+        }
+
+        &:last-child {
+
+            .profile-nav__link {
+                padding-right: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: $lg)  {
+    
+    .profile-nav {
+
+        &__link {
+            padding: 0 10px;
+        }
+    } 
+}

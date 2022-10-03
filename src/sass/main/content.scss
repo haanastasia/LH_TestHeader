@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    font-family: $font-stack;
+}
+
+body {
+    max-width: 1188px;
+    margin: 0 auto;    
+}
+
+a {
+    
+    &:hover {
+        color: initial;
+        text-decoration: none;
+    }
+}
+
+.content {
+    max-width: 694px;    
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
